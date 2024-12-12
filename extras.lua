@@ -18,9 +18,12 @@ return {
 	{ import = "lazyvim.plugins.extras.editor.aerial" },
 	-- { import = "lazyvim.plugins.extras.editor.harpoon2" },
 	{ import = "lazyvim.plugins.extras.editor.illuminate" },
+	 { import = "lazyvim.plugins.extras.lang.markdown" },
+	{ import = "lazyvim.plugins.extras.editor.outline" },
 	{ import = "lazyvim.plugins.extras.util.rest" },
 	{ import = "lazyvim.plugins.extras.coding.yanky" },
 	{ import = "lazyvim.plugins.extras.util.dot" },
+	{ import = "lazyvim.plugins.extras.ui.mini-animate" },
 	{
 		"nvim-flutter/flutter-tools.nvim",
 		lazy = false,
