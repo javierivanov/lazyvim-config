@@ -10,6 +10,12 @@ return {
 			},
 		},
 	},
+	{
+		"folke/which-key.nvim",
+		opts = {
+			preset = "modern",
+		},
+	},
 	{ import = "lazyvim.plugins.extras.coding.mini-surround" },
 	{ import = "lazyvim.plugins.extras.lang.typescript" },
 	{ import = "lazyvim.plugins.extras.lang.json" },
@@ -20,10 +26,9 @@ return {
 	{ import = "lazyvim.plugins.extras.lang.helm" },
 	{ import = "lazyvim.plugins.extras.lang.docker" },
 	{ import = "lazyvim.plugins.extras.dap.core" },
-	{ import = "lazyvim.plugins.extras.editor.aerial" },
 	-- { import = "lazyvim.plugins.extras.editor.harpoon2" },
 	{ import = "lazyvim.plugins.extras.editor.illuminate" },
-	 { import = "lazyvim.plugins.extras.lang.markdown" },
+	{ import = "lazyvim.plugins.extras.lang.markdown" },
 	{ import = "lazyvim.plugins.extras.editor.outline" },
 	{ import = "lazyvim.plugins.extras.util.rest" },
 	{ import = "lazyvim.plugins.extras.coding.yanky" },
@@ -37,20 +42,5 @@ return {
 			"stevearc/dressing.nvim", -- optional for vim.ui.select
 		},
 		config = true,
-	},
-	{
-		"williamboman/mason.nvim",
-		opts = {
-			ensure_installed = {
-				"stylua",
-				"shellcheck",
-				"shfmt",
-				"flake8",
-				"firefox-debug-adapter",
-				"dart-debug-adapter",
-				"buf",
-				"buf-language-server",
-			},
-		},
 	},
 }
