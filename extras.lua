@@ -12,6 +12,13 @@ return {
 	{ "ellisonleao/gruvbox.nvim" },
 	{ "rebelot/kanagawa.nvim" },
 	{ "Mofiqul/vscode.nvim" },
+	{"catppuccin/nvim"},
+	  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin-mocha",
+    },
+  },
 	{
 		"folke/which-key.nvim",
 		opts = {
