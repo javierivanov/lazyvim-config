@@ -19,40 +19,22 @@ return {
 	{ import = "lazyvim.plugins.extras.util.dot" },
 	{ import = "lazyvim.plugins.extras.editor.harpoon2" },
 	{ import = "lazyvim.plugins.extras.ui.mini-animate" },
-		{
-		"folke/tokyonight.nvim",
-		opts = {
-			transparent = true,
-			styles = {
-				sidebars = "transparent",
-				floats = "transparent",
-			},
-		},
-	},
-	{ "ellisonleao/gruvbox.nvim" },
-	{ "rebelot/kanagawa.nvim" },
-	{ "Mofiqul/vscode.nvim" },
-	{ "catppuccin/nvim" },
-	{
-		"LazyVim/LazyVim",
-		opts = {
-			colorscheme = "catppuccin-mocha",
-		},
-	},
+
 	{
 		"folke/which-key.nvim",
 		opts = {
 			preset = "modern",
 		},
 	},
+
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+
+	-- Configure LazyVim to load gruvbox
 	{
-		"nvim-flutter/flutter-tools.nvim",
-		lazy = false,
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"stevearc/dressing.nvim", -- optional for vim.ui.select
+		"LazyVim/LazyVim",
+		opts = {
+			colorscheme = "catppuccin-mocha",
 		},
-		config = true,
 	},
 
 	{
@@ -81,7 +63,6 @@ return {
 			"hrsh7th/nvim-cmp", -- autocompletion for avante commands and mentions
 			"ibhagwan/fzf-lua", -- for file_selector provider fzf
 			"nvim-tree/nvim-web-devicons", -- or echasnovski/mini.icons
-			"zbirenbaum/copilot.lua", -- for providers='copilot'
 			{
 				-- support for image pasting
 				"HakonHarnes/img-clip.nvim",
