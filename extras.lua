@@ -22,6 +22,18 @@ return {
 	{ import = "lazyvim.plugins.extras.ui.mini-animate" },
 
 	{
+		"nvim-flutter/flutter-tools.nvim",
+		lazy = false,
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+			"stevearc/dressing.nvim", -- optional for vim.ui.select
+		},
+		config = true,
+	},
+
+	{ "ellisonleao/gruvbox.nvim" },
+
+	{
 		"folke/which-key.nvim",
 		opts = {
 			preset = "modern",
@@ -45,6 +57,8 @@ return {
 		"LazyVim/LazyVim",
 		opts = {
 			colorscheme = "tokyonight-night",
+			-- colorscheme = "gruvbox",
+			-- colorscheme = "catppuccin-mocha",
 		},
 	},
 
@@ -58,7 +72,7 @@ return {
 			-- for example
 			provider = "gemini",
 			gemini = {
-				model = "gemini-2.0-flash", -- your desired model (or use gpt-4o, etc.)
+				model = "gemini-2.5-pro-exp-03-25", -- your desired model (or use gpt-4o, etc.)
 			},
 		},
 		-- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
